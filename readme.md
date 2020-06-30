@@ -74,17 +74,17 @@ is deleted.
 window is slided till next lowest unacked seq no.Similarly for receiver_window, it is slided as soon as lowest
 sq_no packet is received by the amount that takes it to seq_no of next not-yet-received pkt.
 
-3)Sequence Numbers: 
+3) Sequence Numbers: 
 For ease of coding number of sequence number is taken to be much much larger than theoretical lower bound
 of (2 * WINDOW_SIZE). Sequence numbers incremented by one and not in circular fashion.
 
-4)For handling two relays two different port numbers have been used and there is one socket for each of the 
+4) For handling two relays two different port numbers have been used and there is one socket for each of the 
 nodes being set up using UDP PROTOCOL.
 
-5)sendto and receivefrom have been made non blocking where required using sockpocket.
+5) sendto and receivefrom have been made non blocking where required using sockpocket.
 
-6)Buffering implemented using fixed size. If the buffer is full packets may drop at server side too. But this is not very
+6) Buffering implemented using fixed size. If the buffer is full packets may drop at server side too. But this is not very
 likely for low PDR as buffer is continuosly written as and when in order packets arrive.
 
-7)Delays in packets implemented using usleep() call.
+7) Delays in packets implemented using usleep() call.
 
