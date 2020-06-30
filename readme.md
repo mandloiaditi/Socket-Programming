@@ -1,5 +1,5 @@
 
-## Problem 1
+## Problem 1 : Stop And Wait (TCP)
 
 ### How to run the program
 
@@ -30,7 +30,7 @@ and they are also written in file as soon as missing packets arrive. Thi strateg
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
-## Problem 2
+## Problem 2 : Selective Repeat(UDP)
 
 ### How to run the program
 
